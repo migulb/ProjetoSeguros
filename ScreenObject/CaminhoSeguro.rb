@@ -1,9 +1,6 @@
-require_relative '../Utils/WaitElement'
-
 class Screen_CaminhoSeguro < SitePrism::Page
 
     def clica_Mais
-        wait.wait_for{$driver.find_element(:id, "br.com.votorantim.cartoes.debug:id/item_more").displayed?}
         btn_mais = driver.find_element(:id, 'br.com.votorantim.cartoes.debug:id/item_more')
         btn_mais.click
     end
