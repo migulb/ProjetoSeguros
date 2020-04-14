@@ -5,5 +5,5 @@ Before do
 end
 
 After do
-    #$driver.quit_driver
+    $driver.quit_driver
 end
