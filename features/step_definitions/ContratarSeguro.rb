@@ -3,8 +3,8 @@ require_relative '../../ScreenObject/CaminhoSeguro'
 
 Dado("a abertura do app eu digito meus dados cpf e senha") do 
     sleep 2                           
-     @login.digita_CPF(44441830556)
-     @login.digita_Senha('091017')
+     @login.digita_CPF()
+     @login.digita_Senha()
     sleep 2
      @login.clicar_Acessar
   end
