@@ -2,7 +2,6 @@ class Screen_TelaLogin < SitePrism::Page
 
     def digita_CPF (cpfs)
         cpf = driver.find_element(:id, 'br.com.votorantim.cartoes.debug:id/input_text')        
-        cpf.click
         cpf.send_keys(cpfs)
     end
     
@@ -16,5 +15,13 @@ class Screen_TelaLogin < SitePrism::Page
     def clicar_Acessar
         btn_acessar = driver.find_element(:id, 'br.com.votorantim.cartoes.debug:id/button_sign_in')
         btn_acessar.click
+    end
+
+    def realizarLogin
+        sleep 2
+        digita_CPF(44441830556)
+        digita_Senha('091017')
+        sleep 3
+        clicar_Acessar
     end
 end

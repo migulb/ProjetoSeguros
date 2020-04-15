@@ -1,31 +1,21 @@
 require_relative '../../ScreenObject/TelaLogin'
 require_relative '../../ScreenObject/CaminhoSeguro'
 
-Dado("a abertura do app eu digito meus dados cpf e senha") do 
-    sleep 2                           
-     @login.digita_CPF(44441830556)
-     @login.digita_Senha('091017')
-    sleep 2
-     @login.clicar_Acessar
-  end
+Dado("que eu acesse o app meu cartao") do
+end
+
+Quando("preencher cpf e senha e tocar no botao acessar") do
+  @login.realizarLogin   
+end
   
-  Quando("aperto no botao mais do lado direito inferior") do
+  Entao("o app sera acessado") do
     sleep 8
     @seguro.clica_Mais
-  end
-  
-  Quando("aperto em Seguros e Assistencias") do
+    sleep 3
     @seguro.clica_Seguros
-  end
-  
-  Quando("seleciono o plano classico") do
-    
-  end
-  
-  Quando("concordo com as condicoes gerais") do
-    
-  end
-  
-  Então("confirmo a contratacao do Seguro") do
-    
+    sleep 8
+    @seguro.escolhe_seguro
+    sleep 4
+    @seguro.aceite_termo
+    @seguro.clica_Contratar
   end

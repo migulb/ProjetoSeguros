@@ -1,13 +1,9 @@
 #language: pt
 
-Funcionalidade: Adquirir um Seguro da BV
-
-Contexto: 
-Dado a abertura do app eu digito meus dados cpf e senha 
+Funcionalidade: Efetuar login no App Meu Cartao
 
 Cenário: Adquirir um Seguro via app da BV
-Quando aperto no botao mais do lado direito inferior
-E aperto em Seguros e Assistencias
-E seleciono o plano classico
-E concordo com as condicoes gerais
-Então confirmo a contratacao do Seguro
+Cenario: Efetuar login
+Dado que eu acesse o app meu cartao
+Quando preencher cpf e senha e tocar no botao acessar
+Entao o app sera acessado

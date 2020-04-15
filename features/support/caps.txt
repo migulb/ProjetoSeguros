@@ -5,3 +5,4 @@ deviceName= "emulator-5554"
       appPackage= "br.com.votorantim.cartoes.debug"
       appActivity ="br.com.votorantim.cartoes.ui.login.WelcomeActivity"
       newCommandTimeout= "3600"
+     
