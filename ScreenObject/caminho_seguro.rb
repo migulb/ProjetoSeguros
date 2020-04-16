@@ -1,4 +1,6 @@
-class Screen_CaminhoSeguro < SitePrism::Page
+require_relative '../Utilidades/base_functions'
+
+class Screen_CaminhoSeguro < Wait_for
 
     def clica_Mais
         btn_mais = driver.find_element(:id, 'br.com.votorantim.cartoes.debug:id/item_more')
@@ -6,6 +8,7 @@ class Screen_CaminhoSeguro < SitePrism::Page
     end
     
     def clica_Seguros
+        #wait_for_element_exists_by_xpath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]', 15)
         btn_seguros = driver.find_element(:xpath, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]')
         btn_seguros.click
     end

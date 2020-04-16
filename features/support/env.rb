@@ -1,6 +1,5 @@
 require 'capybara'
 require 'capybara/cucumber'
-require 'site_prism'
 require 'appium_console'
 require 'appium_lib'
 
