@@ -9,11 +9,9 @@ Quando("preencher cpf e senha e tocar no botao acessar") do
 end
   
 Entao("o app sera acessado") do
-  sleep 4
     @seguro.clica_Mais
     @seguro.clica_Seguros
     @seguro.escolhe_seguro
-    
     @seguro.aceite_termo
     @seguro.clica_Contratar
 end

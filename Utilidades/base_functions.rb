@@ -19,6 +19,10 @@ class Wait_for
         raise e
       end
 
+def wait_for_click(atributos)
+  manage.timeouts.implicit_wait = 20
+  find_element(atributos).click
+end
     def esconde_teclado
       @driver.hide_keyboard
     end
