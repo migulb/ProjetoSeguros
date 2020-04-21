@@ -11,7 +11,10 @@ end
 Entao("o app sera acessado") do
     @seguro.clica_Mais
     @seguro.clica_Seguros
-    @seguro.escolhe_seguro
+    @seguro.escolhe_seguroFinanca
     @seguro.aceite_termo
     @seguro.clica_Contratar
+end
+Entao("eu acesso o app") do
+  
 end
