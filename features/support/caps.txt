@@ -1,8 +1,7 @@
 [caps]
-deviceName= "emulator-5554"
-      platformName= "Android"
-
-      appPackage= "br.com.votorantim.cartoes.debug"
-      appActivity ="br.com.votorantim.cartoes.ui.login.WelcomeActivity"
-      newCommandTimeout= "3600"
+deviceName= 'emulator-5554'
+platformName= 'Android'
+appPackage= 'br.com.votorantim.cartoes.debug'
+appActivity ='br.com.votorantim.cartoes.ui.login.WelcomeActivity'
+newCommandTimeout= '3600'
      

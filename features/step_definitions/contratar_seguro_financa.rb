@@ -1,14 +1,14 @@
 require_relative '../../ScreenObject/tela_login'
 require_relative '../../ScreenObject/caminho_seguro'
 
-Dado("que eu acesse o app meu cartao") do
+Dado("que eu acesse o app meu cartao da BV") do
 end
 
-Quando("preencher cpf e senha e tocar no botao acessar") do
+Quando("preencher cpf e senha e depois tocar no botao acessar") do
   @login.realizarLogin   
 end
   
-Entao("o app sera acessado") do
+Entao("o app devera ser acessado") do
     @seguro.clica_Mais
     @seguro.clica_Seguros
     @seguro.escolhe_seguroFinanca
