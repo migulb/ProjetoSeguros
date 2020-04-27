@@ -15,6 +15,6 @@ Entao("o app devera abrir") do
     @seguro.aceite_termo
     @seguro.clica_Contratar
 end
-Entao("eu acesso o app") do
+Entao("eu irei acessar o app") do
   
 end

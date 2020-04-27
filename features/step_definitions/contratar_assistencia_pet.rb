@@ -9,12 +9,13 @@ Quando("preencher cpf e senha e aperte o botao acessar") do
 end
   
 Entao("o app sera aberto") do
+
     #@seguro.clica_Mais
    # @seguro.clica_Seguros
    # @seguro.clica_assistenciaPet
    # @seguro.aceite_termo
    # @seguro.clica_Contratar
 end
-Entao("eu acesso o app") do
+Entao("eu terei acesso ao app") do
   
 end

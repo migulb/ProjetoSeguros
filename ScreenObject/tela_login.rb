@@ -3,7 +3,7 @@ require_relative '../Utilidades/base_functions'
 class Screen_TelaLogin < Wait_for
 
     def digita_CPF (cpfs)
-        cpf = driver.find_element(:id, 'br.com.votorantim.cartoes.debug:id/input_text')        
+        cpf = driver.find_element(:id, 'input_text')        
         cpf.send_keys(cpfs)
     end
     
@@ -15,8 +15,8 @@ class Screen_TelaLogin < Wait_for
     end
 
     def clicar_Acessar
-        wait_for_element_exists_by_id('br.com.votorantim.cartoes.debug:id/button_sign_in')
-        btn_acessar = driver.find_element(:id, 'br.com.votorantim.cartoes.debug:id/button_sign_in')
+        wait_for_element_exists_by_id('button_sign_in')
+        btn_acessar = driver.find_element(:id, 'button_sign_in')
         btn_acessar.click
     end
 
