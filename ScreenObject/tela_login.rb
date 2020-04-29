@@ -1,5 +1,6 @@
 require_relative '../Utilidades/base_functions'
 
+
 class Screen_TelaLogin < Wait_for
 
     def digita_CPF (cpfs)
@@ -21,7 +22,7 @@ class Screen_TelaLogin < Wait_for
     end
 
     def realizarLogin
-        digita_CPF(44441830556)
+        digita_CPF(45068613886)
         digita_Senha('091017')
         clicar_Acessar
     end

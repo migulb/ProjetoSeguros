@@ -2,6 +2,8 @@ require_relative '../../ScreenObject/tela_login'
 require_relative '../../ScreenObject/caminho_seguro'
 
 Dado("que eu abra o app meu cartao") do
+  @login=Screen_TelaLogin.new()
+  @seguro=Screen_CaminhoSeguro.new()
 end
 
 Quando("preencher cpf e senha e toque no botao acessar") do

@@ -5,8 +5,6 @@ require_relative "report"
 
 Before do
   $driver.start_driver
-  @login=Screen_TelaLogin.new()
-  @seguro=Screen_CaminhoSeguro.new()
 end
 
 After do |scenario|
