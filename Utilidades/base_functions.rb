@@ -1,4 +1,4 @@
-class Wait_for
+class Functions
     
     def wait_for_element_exists_by_id(identificator)
         @driver.manage.timeouts.implicit_wait = 20
@@ -23,7 +23,9 @@ def wait_for_click(atributos)
   manage.timeouts.implicit_wait = 20
   find_element(atributos).click
 end
-    def esconde_teclado
-      @driver.hide_keyboard
+    def hide_keyboard
+      $driver.hide_keyboard
+    rescue Exception => e
+      puts e
     end
 end
